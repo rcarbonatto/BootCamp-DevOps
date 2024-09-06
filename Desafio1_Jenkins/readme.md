@@ -36,7 +36,7 @@ En caso que no haya configurado su Token de acceso a GitHub en Jenkins:
     f. Description: Colocamos una descripcion para este token
 
 -------------Agregar el Repositorio a Jenkins-------------------
-1- Ingresamos a Jenkins desde el navegador colocando  la IP  asignada y el puerto
+1- Ingresamos a Jenkins desde el navegador colocando  la IP ignada y el puerto
 2- Sobre el  perfil izquierdo seleccionamos Nueva Tarea
 3- Colocamos un nombre descriptivo, seleccionamos la  opcion de Pipeline y presionamos OK en la parte inferior
 4- Nos Despazamos hasta la opcion de Pipeline,
