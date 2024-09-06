@@ -9,7 +9,7 @@ Titulo: Desafio  1 - Bootcamp DevOps
 Se da por entendido que ya tiene corriendo una instancia con Jenkins corriendo en Linux.  
 
 En caso que no haya configurado su Token de acceso a GitHub en Jenkins:
--------------En Github-------------------
+#-------------En Github-------------------
 1- En tu cuenta de  GitHub, debes ir a la parte superior derecha donde se encuentra tu foto, haz click y ve a Settings
 2- Sobre la barra izquierda, ve a la ultima opcion <>Developer Settings y haz click
 3- Selecciona Fine-grained Tokens
@@ -24,7 +24,7 @@ En caso que no haya configurado su Token de acceso a GitHub en Jenkins:
     b. Contents: Read and Write 
     c. Metadata: Read-Only
 7- Presionamos en Generar Token y guardamos el token en un lugar seguro
--------------En Jenkins-------------------
+#-------------En Jenkins-------------------
 1- Ingresamos a Jenkins desde el navegador colocando  la IP  asignada y el puerto
 2- Vamos a: Panel de Control - Administrar Jenkins - Credentials - System - Global Credential(unrestricted) - Add Credentials
 3- Para la nueva Credencial completamos lo siguiente: 
@@ -35,7 +35,7 @@ En caso que no haya configurado su Token de acceso a GitHub en Jenkins:
     e. ID: Colocamos un nombre descriptivo
     f. Description: Colocamos una descripcion para este token
 
--------------Agregar el Repositorio a Jenkins-------------------
+#-------------Agregar el Repositorio a Jenkins-------------------
 1- Ingresamos a Jenkins desde el navegador colocando  la IP ignada y el puerto
 2- Sobre el  perfil izquierdo seleccionamos Nueva Tarea
 3- Colocamos un nombre descriptivo, seleccionamos la  opcion de Pipeline y presionamos OK en la parte inferior
@@ -48,7 +48,7 @@ En caso que no haya configurado su Token de acceso a GitHub en Jenkins:
     f. en Script Path ponemos: ./Desafio1_Jenkins/JenkinsFile
 5- Presionamos Guardar
 
--------------Correr el Pipeline-------------------
+#-------------Correr el Pipeline-------------------
 1- Desde la Pantalla principal seleccionamos el trabajo creado
 2- Clickeamos en Construir Ahora
 3- Esperamos que termine de correr, y refrescamos la  pagina
@@ -74,7 +74,7 @@ Title: Challenge 1 - DevOps Bootcamp
 It is assumed that you already have an instance running with Jenkins running on Linux.
 
 In case you have not configured your GitHub Access Token in Jenkins:
--------------On Github-------------------
+#-------------On Github-------------------
 1- In your GitHub account, you must go to the top right where your photo is located, click and go to Settings
 2- On the left bar, go to the last option <>Developer Settings and click
 3- Select Fine-grained Tokens
@@ -89,7 +89,7 @@ In case you have not configured your GitHub Access Token in Jenkins:
      b. Contents: Read and Write
      c. Metadata: Read-Only
 7- Click on Generate Token and save the token in a safe place
--------------In Jenkins------------------
+#-------------In Jenkins------------------
 1- We enter Jenkins from the browser by entering the assigned IP and port
 2- Let's go to: Control Panel - Manage Jenkins - Credentials - System - Global Credential(unrestricted) - Add Credentials
 3- For the new Credential we complete the following:
@@ -100,7 +100,7 @@ In case you have not configured your GitHub Access Token in Jenkins:
      and. ID: We put a descriptive name
      F. Description: We put a description for this token
 
--------------Add the Repository to Jenkins----------------------------------
+#-------------Add the Repository to Jenkins----------------------------------
 1- We enter Jenkins from the browser by entering the assigned IP and port
 2- On the left profile we select New Task
 3- We enter a descriptive name, select the Pipeline option and press OK at the bottom
@@ -113,7 +113,7 @@ In case you have not configured your GitHub Access Token in Jenkins:
      F. in Script Path we put: ./Desafio1_Jenkins/JenkinsFile
 5- We press Save
 
--------------Run the Pipeline----------------------------------
+#-------------Run the Pipeline----------------------------------
 1- From the Main Screen we select the created job
 2- Click on Build Now
 3- We wait for it to finish running, and refresh the page
