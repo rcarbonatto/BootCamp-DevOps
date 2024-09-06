@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    //Declaramos los Parametros que el operador necesito ingresar
+    //Declaration of Parameters that Operator need to input manually
+    parameters{
+        string (name: "FullName", description: "Nombre Y Apellido del Usuario")
+        string(name: "NombreUsuario", description:"Identificador Unico para LogIn")
+        choice(name: "Departamento", choices: ["Contabilidad","Finanzas","Tecnologia"], description:"Departamentos Permitidos")
+    }
+   
+    stages {
+        stage("Creando El Usuario") {
+            steps {
+                sh "sudo sh ./Desafio1_Jenkins/New_User_Ubuntu.sh '${params.NombreUsuario}' '${params.FullName}' '${params.Departamento}' "
+                         
+            }
+        }
+    }
+}
