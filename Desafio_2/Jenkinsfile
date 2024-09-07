@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+       
+    stages {
+        stage("Install npm (Node Package Manager)") { //A free, open-source registry and package manager for JavaScript software packages
+            steps {
+                sh "sudo npm install"
+                         
+            }
+        }
+    }
+}
