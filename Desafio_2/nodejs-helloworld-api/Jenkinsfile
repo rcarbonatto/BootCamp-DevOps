@@ -9,6 +9,7 @@ pipeline {
                 echo "Ejecutar npm install" 
                 
                 sh 'sudo apt -y install npm'
+                sh 'sudo apt -y install jest'
             }
         }
 
