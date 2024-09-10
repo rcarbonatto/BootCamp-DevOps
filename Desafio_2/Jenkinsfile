@@ -1,11 +1,18 @@
 pipeline {
     agent any
-       
+    tools {
+        nodejs 'nodejs22.8.0'
+    }   
     stages {
-        stage("Install npm (Node Package Manager)") { //A free, open-source registry and package manager for JavaScript software packages
+        stage("Installing dependencies npm") { //A free, open-source registry and package manager for JavaScript software packages
             steps {
                 sh "sudo npm install"
                          
+            }
+        }
+        stage("Run Test"){
+            steps{
+                sh "sudo npm test"
             }
         }
     }

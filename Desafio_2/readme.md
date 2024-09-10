@@ -1,2 +1,6 @@
 - Fork de carpeta nodejs y agregarla al proyecto
--  
+-  Instalar NGrock en la maquina virtual, agregar el authtoken y escribir el comando:  ngrok http http://localhost:8080 donde localhost es la Ip de la maquina
+- Configurar Webhook en Github
+    - se puede ver un POST a la direccion de Github
+- Configurar nodejs en Jenkins
+- 
