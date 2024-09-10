@@ -4,7 +4,7 @@ pipeline {
         nodejs 'nodejs22.8.0'
     }
     stages {
-        stage('Build ') {
+        stage('Build') {
             steps {
                 echo "Ejecutar npm install" 
                 sh 'sudo apt -y install npm'
