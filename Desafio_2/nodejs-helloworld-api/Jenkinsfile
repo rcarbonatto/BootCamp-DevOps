@@ -4,14 +4,14 @@ pipeline {
         nodejs 'nodejs22.8.0'
     }
     stages {
-        stage('Build') {
+        stage('Build ') {
             steps {
                 echo "Ejecutar npm install" 
                 sh 'npm install'
             }
         }
 
-        stage('Test') {
+        stage('Test ') {
             steps {
                 echo "Ejecutar npm test push" 
                 sh 'npm test'
