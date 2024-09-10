@@ -4,7 +4,7 @@ pipeline {
         nodejs 'nodejs22.8.0'
     }
     stages {
-        stage('Build') {
+        stage('Install Npm') {
             steps {
                 echo "Ejecutar npm install" 
                 
@@ -12,11 +12,11 @@ pipeline {
             }
         }
 
-        stage('Test ') {
+        stage('Test') {
             steps {
                 echo "Ejecutar npm test push" 
                 sh "cd ./Desafio_2/nodejs-helloworld-api && npm test"
-                
+             
             }
         }
     }
