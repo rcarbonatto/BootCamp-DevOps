@@ -15,7 +15,7 @@ pipeline {
         stage('Test ') {
             steps {
                 echo "Ejecutar npm test push" 
-                dir "./Desafio_2/nodejs-helloworld-api/"
+                sh "cd ./Desafio_2/nodejs-helloworld-api/"
                 sh "pwd" 
                 sh 'npm test'
             }
