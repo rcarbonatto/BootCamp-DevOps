@@ -7,6 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Ejecutar npm install" 
+                sh 'cd ./Desafio_2/nodejs-helloworld-api/'
                 sh 'sudo apt -y install npm'
             }
         }
