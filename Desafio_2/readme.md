@@ -3,4 +3,4 @@
 - Configurar Webhook en Github
     - se puede ver un POST a la direccion de Github
 - Configurar nodejs en Jenkins
-- 
+- Installed jest
