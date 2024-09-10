@@ -7,9 +7,13 @@ pipeline {
         stage('Install Npm') {
             steps {
                 echo "Ejecutar npm install" 
-                
                 sh 'sudo apt -y install npm'
+                
+                echo 'Ejecutar Jest Install'
                 sh 'sudo apt -y install jest'
+
+                echo 'install supertest from npm' //https://github.com/ladjs/supertest#readme
+                sh 'npm install supertest --save-dev'
             }
         }
 
