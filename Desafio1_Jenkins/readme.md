@@ -7,7 +7,7 @@
 **Autor:** Rodrigo Carbonatto Sarlengo  
 **Título:** Desafío 1 - Bootcamp DevOps
 
-Se da por entendido que ya tienes corriendo una instancia con Jenkins en Linux.
+*Se asume que hay una instancia con Jenkins en Linux corriendo.*
 
 ### Configuración del Token de Acceso a GitHub en Jenkins
 
@@ -61,9 +61,9 @@ Se da por entendido que ya tienes corriendo una instancia con Jenkins en Linux.
 3. Espera a que termine de correr y refresca la página.
 4. El botón **Construir Ahora** debe haber cambiado a **Construir con Parámetros**, haz clic en él.
 5. Completa los campos:
-   - **Primer Campo (FullName):** Completa con Nombre y Apellido del nuevo usuario.
-   - **Segundo Campo (NombreUsuario):** Completa con el Login (Identificador Único, puede ser nombre y apellido sin espacios).
-   - **Tercer Campo (Departamento):** Selecciona el Departamento desde la lista.
+   - `FullName`: Completa con Nombre y Apellido del nuevo usuario.
+   - `NombreUsuario`: Completa con el Login (Identificador Único, puede ser nombre y apellido sin espacios).
+   - `Departamento`: Selecciona el Departamento desde la lista.
 6. Una vez completados los 3 campos presiona **Ejecución**.
 7. Esto te redirigirá a una página donde verás que debajo de **Creando el Usuario** aparece un cuadro verde. En el primer cuadro haz clic y presiona sobre **Logs**.
 8. Desde aquí puedes copiar todos los datos del usuario creado junto con la contraseña temporal.

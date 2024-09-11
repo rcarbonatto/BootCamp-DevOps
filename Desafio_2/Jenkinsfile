@@ -4,7 +4,7 @@ pipeline {
         nodejs 'nodejs22.8.0'
     }
     stages {
-        stage('Install Npm') {
+        stage('Installation Stage') {
             steps {
                 echo "Ejecutar npm install" 
                 sh 'sudo apt -y install npm'
@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Run Test') {
             steps {
                 echo "Ejecutar npm test push" 
                 sh "cd ./Desafio_2/nodejs-helloworld-api && npm test"
