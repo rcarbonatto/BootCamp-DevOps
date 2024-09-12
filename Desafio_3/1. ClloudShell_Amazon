@@ -211,3 +211,20 @@ default
 s3-support
 [cloudshell-user@ip-10-132-45-62 ~]$ aws
 
+TERMINO SESION cloudshell
+
+
+
+---------------------------------------------------------------------------------------------
+"AccessKey": {
+        "UserName": "s3-support",
+        "AccessKeyId": "AKIA47GCAMD3ZPC4C5FM",
+        "Status": "Active",
+        "SecretAccessKey": "NN2R4cphLCo73WvUFa52ghje6MvVFZFOEW9",
+        "CreateDate": "2024-09-12T06:26:05+00:00"
+
+
+rcarbonatto:
+Access Key: AKIA47GCAMD37EWECHOQ
+Secret Key: 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
+
