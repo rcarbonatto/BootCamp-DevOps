@@ -86,15 +86,15 @@ Error parsing parameter '--assume-role-policy-document': Unable to load paramfil
 {
     "AccessKey": {
         "UserName": "s3-support",
-        "AccessKeyId": "AKIA47GCAMD3ZPC4C5FM",
+        "AccessKeyId": " ",
         "Status": "Active",
-        "SecretAccessKey": "NN2R4cphLCo73WvUFa52ghje6MvVFZFOEW9/T10S",
+        "SecretAccessKey": "/T10S",
         "CreateDate": "2024-09-12T06:26:05+00:00"
     }
 }
 [cloudshell-user@ip-10-132-45-62 ~]$ aws configure --profile s3-support
-AWS Access Key ID [None]: AKIA47GCAMD3ZPC4C5FM
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]:  
+AWS Secret Access Key [None]:  /T10S
 Default region name [None]: us-east-2
 Default output format [None]: json
 [cloudshell-user@ip-10-132-45-62 ~]$ aws iam ls
@@ -216,15 +216,5 @@ TERMINO SESION cloudshell
 
 
 ---------------------------------------------------------------------------------------------
-"AccessKey": {
-        "UserName": "s3-support",
-        "AccessKeyId": "AKIA47GCAMD3ZPC4C5FM",
-        "Status": "Active",
-        "SecretAccessKey": "NN2R4cphLCo73WvUFa52ghje6MvVFZFOEW9",
-        "CreateDate": "2024-09-12T06:26:05+00:00"
 
-
-rcarbonatto:
-Access Key: AKIA47GCAMD37EWECHOQ
-Secret Key: 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
 
