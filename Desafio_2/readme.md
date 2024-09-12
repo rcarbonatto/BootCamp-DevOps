@@ -7,7 +7,7 @@
 **Autor:** Rodrigo Carbonatto Sarlengo  
 **Título:** Desafío 2 - Bootcamp DevOps
 
-Se da por entendido que ya tienes corriendo una instancia con Jenkins en Linux.
+*Se asume que ya tienes corriendo una instancia con Jenkins en Linux.*
 
 
 ### Traer el proyecto de Nodejs al repositorio de Github
