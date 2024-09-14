@@ -1,11 +1,11 @@
-# AWS - Desafío 3
+# AWS - Desafío 4
 
 ## Español
 
 ¡Hola! En este Desafio crearemos un bucket  S3 y un rol de IAM para permitir la escritura en el mismo.
 **Fecha:** 14-Septiembre-2024  
 **Autor:** Rodrigo Carbonatto Sarlengo  
-**Título:** Desafío 3 - Bootcamp DevOps
+**Título:** Desafío 4 - Bootcamp DevOps
 
 *Se recomienda no usar el usuario Root, sino otro usuario como administrador*
 
@@ -45,7 +45,7 @@
 Hello! In this Challenge, we will create an S3 bucket and an IAM role to allow writing to it.
 **Date**: September 14, 2024
 **Author**: Rodrigo Carbonatto Sarlengo
-**Title**: Challenge 3 - DevOps Bootcamp
+**Title**: Challenge 4 - DevOps Bootcamp
 
 *It is recommended not to use the Root user, but another user as an administrator*
 
