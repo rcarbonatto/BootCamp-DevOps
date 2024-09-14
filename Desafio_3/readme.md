@@ -17,12 +17,12 @@
 4. Creamos las credenciales programaticas para el usuario. AccessKey y SecretKey seran mostradas en pantalla. Guardar en un lugar seguro para futuro uso
     `aws iam create-access-key --user-name s3-support`
 5. Creamos el Rol (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) 
-    *1.* Creamos el Rol y asignamos una trust policy 
+    1. Creamos el Rol y asignamos una trust policy 
         `aws iam create-role --role-name Desafio3_Rol --assume-role-policy-document file://Trust_Policy_For_Role.json` (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html)
-    *2.* Creamos la politica para acceso de Escritura al Bucket
+    2. Creamos la politica para acceso de Escritura al Bucket
      https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket-console.html
     Desde la terminal subimos el archivo json y luego corremos el siguiente comando: `aws iam create-policy --policy-name` *Nombre_De_La_politica* `--policy-document file://`Nombre_Del_Archivo (https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html) 
-    *3.* Subimos y Asignamos la politica de Permisos de Escritura al Bucket
+    3. Subimos y Asignamos la politica de Permisos de Escritura al Bucket
         `aws iam attach-role-policy --role-name Desafio3_Rol --policy-arn arn:aws:iam::********:policy/RW_Access_S3.json`
 6. Conectamos el CLI con el usuario S3-support
     `aws configure` y ponemos las keys generadas antes
@@ -57,11 +57,11 @@ Hello! In this Challenge, we will create an S3 bucket and an IAM role to allow w
 4. Create programmatic credentials for the user. AccessKey and SecretKey will be displayed on the screen. Save in a secure place for future use 
    `aws iam create-access-key --user-name s3-support`
 5. Create the Role (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) 
-   *1.* Create the Role and assign a trust policy 
+   1. Create the Role and assign a trust policy 
    `aws iam create-role --role-name Desafio3_Rol --assume-role-policy-document file://Trust_Policy_For_Role.json` (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) 
-   *2.* Create the policy for Write access to the Bucket https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket-console.html 
+   2. Create the policy for Write access to the Bucket https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_s3_rw-bucket-console.html 
    From the terminal, upload the json file and then run the following command: aws` iam create-policy --policy-name Policy_Name --policy-document file://File_Name` (https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html  
-   *3.* Upload and Assign the Write Permissions Policy to the Bucket 
+   3. Upload and Assign the Write Permissions Policy to the Bucket 
    `aws iam attach-role-policy --role-name Desafio3_Rol --policy-arn arn:aws:iam::********:policy/RW_Access_S3.json`   
 6. Connect the CLI with the S3-support user 
     `aws configure` and enter the keys generated before
