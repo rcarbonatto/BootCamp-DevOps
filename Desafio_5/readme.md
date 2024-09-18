@@ -14,13 +14,13 @@
 
 2. ### Creacion de la VPC
     1. Buscamos VPC e ingresamos. En la parte superior seleccionamos Create VPC
-    2. Creamos la VPC siguiente estos parametros: ![Creacion VPC Image](./Captures/Creacion_VPC.png)
+    2. Creamos la VPC siguiente estos parametros: ![Creacion VPC Image](./Captures/1.%20Creacion_VPC.png)
     3. Esto Creara la VPC y todos los elementos necesarios como: DNS, Subnet, gateway, route table, etc
 
 3. ### Configurar Security Group
     1. En la barra superior buscamos Security Group y seleccionamos el que diga VPC Feature 
     2. Ingresamos al Default Security Group asociado con el VPC ID que recien creamos
-    3. Eliminamos la regla que se encuentra creada (la cual solo permite conexiones dentro del grupo de seguridad) y creamos una nueva con los siguientes datos: ![VPC Inbound Rule](./Captures/VPC%20Inbound%20Rule.png)
+    3. Eliminamos la regla que se encuentra creada (la cual solo permite conexiones dentro del grupo de seguridad) y creamos una nueva con los siguientes datos: ![VPC Inbound Rule](./Captures/2.%20VPC%20Inbound%20Rule.png)
 
 4. ### Creamos una Subred Privada
     1. En la creacion seleccionamos una Availability Zone diferente la de la Subnet Publica
@@ -56,12 +56,13 @@
     3. Click Next and Create User.
 2. ### Creating the VPC
     1. Search for VPC and enter it. At the top, select Create VPC.
-    2. Create the VPC with the following parameters:![Creacion VPC Image](./Captures/Creacion_VPC.png)
+    2. Create the VPC with the following parameters:![Creacion VPC Image](./Captures/1.%20Creacion_VPC.png)
     3. This will create the VPC and all necessary elements such as DNS, Subnet, gateway, route table, etc.
 3. ### Configuring Security Group
     1. In the top bar, search for Security Groups and select the one labeled VPC Feature.
     2. Enter the Default Security Group associated with the VPC ID we just created.
-    3. Delete the existing rule (which only allows connections within the security group) and create a new one with the following details:
+    3. Delete the existing rule (which only allows connections within the security group) and create a new one with the following details:![VPC Inbound Rule](./Captures/2.%20VPC%20Inbound%20Rule.png)
+
 4. ### Creating a Private Subnet
     1.  During creation, select an Availability Zone different from the Public Subnet.
     2. Create it with the following details:![Private Subnet](./Captures/3.%20Creation%20Private%20Subnet.png)
