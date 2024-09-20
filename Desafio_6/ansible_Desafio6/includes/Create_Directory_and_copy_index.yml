@@ -1,0 +1,15 @@
+- name: Crear el Directorio
+  file:
+    path: "{{ site_dir }}"
+    state: directory
+    owner: www-data
+    group: www-data
+  when: is_ubuntu
+- name: copiar index.html al directorio del sitio
+  copy:
+    src: ..\Desafio_6\ansible_Desafio6\files\index.html
+    dest: "{{ site_dir }}"
+    owner: www-data
+    group: www-data
+    mode: '0644'
+  when: is_ubuntu

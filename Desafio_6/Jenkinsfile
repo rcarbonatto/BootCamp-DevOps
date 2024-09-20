@@ -1,0 +1,13 @@
+pipeline {
+    agent {label 'ubuntu20'}
+    //aqui va el nombre del Controller que tiene Ansible Instalado
+    
+    stages {
+        stage("Ejecutar ansible playbook") {
+            steps {
+                sh "ansible-playbook -i ./Desafio_6/ansible_Desafio6/inventory.ini ./Desafio_6/ansible_Desafio6/main.yml"
+                         
+            }
+        }
+    }
+}
