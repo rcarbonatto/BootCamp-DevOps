@@ -11,10 +11,13 @@
   tasks:
     - name: Instalar servicio Apache
       include_tasks: 
-        file ..\Desafio_6\ansible_Desafio6\includes\install-apache2.yml
+        includes/install-apache2.yml
     - name: Crear Directorio y Copiar archivo main
       include_tasks: 
-        file ..\Desafio_6\ansible_Desafio6\includes\Create_Directory_and_copy_index.yml
+        includes/Create_Directory_and_copy_index.yml
     - name: Configurar nuevo sitio, habilitarlo y cambiar mail de webmaster
       include_tasks: 
-        file ..\Desafio_6\ansible_Desafio6\includes\Config_new_site_WebmasterEmail.yml
+        includes/Config_new_site_WebmasterEmail.yml
+  
+  handlers: 
+    - include_tasks: handler/restart_apache.yml

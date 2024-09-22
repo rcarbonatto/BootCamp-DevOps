@@ -21,12 +21,7 @@
     regexp: 'ServerAdmin webmaster@localhost'
     line: '	ServerAdmin webmaster@educacionit.com'
   when: is_ubuntu
-  notify:
-    - Reload Apache
 
-  handlers:
-    - name: Reload Apache
-      service:
-        name: apache2
-        state: reloaded
-      when: is_ubuntu
+
+
+    
