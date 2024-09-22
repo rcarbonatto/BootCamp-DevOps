@@ -18,12 +18,3 @@
     - name: Configurar nuevo sitio, habilitarlo y cambiar mail de webmaster
       include_tasks: 
         file ..\Desafio_6\ansible_Desafio6\includes\Config_new_site_WebmasterEmail.yml
-    - name: Reload Apache 
-      notify:
-        - Reload Apache
-  handlers:
-    - name: Reload Apache
-      service:
-        name: apache2
-        state: reloaded
-      when: is_ubuntu

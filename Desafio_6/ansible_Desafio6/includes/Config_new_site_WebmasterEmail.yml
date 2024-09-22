@@ -3,15 +3,30 @@
     src: ../Desafio_6/ansible_Desafio6/templates/ansible_site.conf.j2
     dest: /etc/apache2/sites-available/ansible_site.conf
   when: is_ubuntu
+  notify:
+    - Reload Apache
 - name: Activa el nuevo sitio
   command: a2ensite ansible_site.conf
   when: is_ubuntu
+  notify:
+    - Reload Apache
 - name: Deshabilita el sitio default
   command: a2dissite 000-default.conf
   when: is_ubuntu
+  notify:
+    - Reload Apache
 - name: Cambiar el e-mail del webmaster
   lineinfile:
     path: /etc/apache2/sites-available/000-default.conf
     regexp: 'ServerAdmin webmaster@localhost'
     line: '	ServerAdmin webmaster@educacionit.com'
   when: is_ubuntu
+  notify:
+    - Reload Apache
+
+  handlers:
+    - name: Reload Apache
+      service:
+        name: apache2
+        state: reloaded
+      when: is_ubuntu
