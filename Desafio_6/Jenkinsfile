@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'ubuntu20'}
+    agent {label 'principal'}
     //aqui va el nombre del Controller que tiene Ansible Instalado
     
     stages {

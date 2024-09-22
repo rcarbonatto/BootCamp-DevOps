@@ -7,7 +7,7 @@
 **Título:** Desafío 6 - Bootcamp DevOps
 
 ### Modularizacion y Configuracion del proyecto ansible
-1. Nos traemos el repositorio a modularizar a este proyecto. Dejamos una copia sin modificar en ![ansible_profesor_anterior](./ansible_profesor_anterior/) 
+1. Nos traemos el repositorio a modularizar a este proyecto. Dejamos una copia sin modificar en ![ansible_profesor_anterior](./ZZ_ansible_profesor_anterior/) 
 2. Usaremos la carpeta includes para la modularizacion
 3. Identificamos las partes del archivo y vemos que podemos modularizar organizar el main.yml
 4. Configuramos el archivo ![inventory.ini](./ansible_Desafio6/inventory.ini)
@@ -20,4 +20,10 @@
     3. Hacemos prueba de conexion: `ssh -i ~/.ssh/id_privada user@hostip` para verificar que no tengamos ningun problemma
     4. Configuramos el archivo ![inventory.ini](./ansible_Desafio6/inventory.ini)
 
+### Jenkins
+1. Agregamos el repositorio como una nueva tarea a Jenkins ![Como Crear el Repo? Mira este Readme ](../Desafio_1/readme.md)
+2. Creamos el nodo en Jenkins
+    1. ![Picture Node Creation](./Screen_Captures/1.%20Jenkins_node_Creation.png)
+    2. Creamos las Credenciales de acceso./ Kind: SSH Username With Private Key
+2. Contruimos la tarea en Jenkins
 
