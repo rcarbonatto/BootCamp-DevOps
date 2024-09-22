@@ -1,6 +1,5 @@
 pipeline {
-    agent {label 'principal'}
-    //aqui va el nombre del Controller que tiene Ansible Instalado
+    agent any
     
     stages {
         stage("Ejecutar ansible playbook") {
