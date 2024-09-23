@@ -1,12 +1,16 @@
 pipeline {
     agent any
+
+    enviroment {
+        node1_PRIVATE_KEY=credentials('Key_Node1')
+    }
     
     stages {
         stage("Ejecutar ansible playbook") {
             steps {
                 sh "whoami"
                 sh "pwd"
-                sh "ansible-playbook -i ./Desafio_6/ansible_Desafio6/inventory.ini ./Desafio_6/ansible_Desafio6/main.yml"
+                sh "ansible-playbook -i ./Desafio_6/ansible_Desafio6/inventory.ini --private-key=$node1_PRIVATE_KEY ./Desafio_6/ansible_Desafio6/main.yml"
                          
             }
         }
