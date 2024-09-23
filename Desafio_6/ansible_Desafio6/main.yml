@@ -6,18 +6,23 @@
     - name: Verificar si el OS es Ubuntu
       set_fact:
         is_ubuntu: "{{ ansible_distribution == 'Ubuntu' }}"
+  handlers: 
+    - include_tasks: handlers\restart_apache.yml
   vars_files:
     - vars/vars-site.yml
   tasks:
     - name: Instalar servicio Apache
-      include_tasks: 
-        includes/install-apache2.yml
+      include_tasks: includes/install-apache2.yml
+
     - name: Crear Directorio y Copiar archivo main
-      include_tasks: 
-        includes/Create_Directory_and_copy_index.yml
+      include_tasks: includes/Create_Directory_and_copy_index.yml
+      
     - name: Configurar nuevo sitio, habilitarlo y cambiar mail de webmaster
-      include_tasks: 
-        includes/Config_new_site_WebmasterEmail.yml
+      include_tasks: includes/Config_new_site_WebmasterEmail.yml
+
+    - name: Restart Apache
+      include_tasks: handlers/restart_apache.yml
+    
+ 
   
-  handlers: 
-    - include_tasks: handler/restart_apache.yml
+

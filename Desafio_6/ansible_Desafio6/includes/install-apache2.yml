@@ -1,6 +1,7 @@
-- name: Actualizar el cache de paqutes.
+- name: Actualizar el cache de paqutes y upgrade.
   apt:
     update_cache: yes
+    upgrade: yes
   when: is_ubuntu
 - name: Instalar Apache2
   apt:

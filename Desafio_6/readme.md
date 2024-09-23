@@ -22,8 +22,7 @@
 
 ### Jenkins
 1. Agregamos el repositorio como una nueva tarea a Jenkins ![Como Crear el Repo? Mira este Readme ](../Desafio_1/readme.md)
-2. Creamos el nodo en Jenkins
-    1. ![Picture Node Creation](./Screen_Captures/1.%20Jenkins_node_Creation.png)
-    2. Creamos las Credenciales de acceso./ Kind: SSH Username With Private Key
 2. Contruimos la tarea en Jenkins
 
+
+### Pruebas funcionamiento

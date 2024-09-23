@@ -7,7 +7,7 @@
   when: is_ubuntu
 - name: copiar index.html al directorio del sitio
   copy:
-    src: files\index.html
+    src: index.html
     dest: "{{ site_dir }}"
     owner: www-data
     group: www-data
