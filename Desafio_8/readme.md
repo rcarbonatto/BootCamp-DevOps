@@ -36,17 +36,6 @@
 1. Usaremos el repositorio en: https://github.com/hashicorp-education/learn-terraform-github-actions como template 
 2. Realizamos Fork del repositorio con `gh repo fork https://github.com/hashicorp-education/learn-terraform-github-actions.git` y lo clonamos en el repositorio que usaremos
 3. Desde la terminal ponemos `git add "Ruta_de_carpeta_del_Clone"`, hacemos `git commit -m "mensaje"` y luego `git push`
-4. En el Repositorio que creamos vamos a Settings - Secrets and variable - Actions - New Repository Secret. POnemos el token generado en el paso anterior con nombre TF_API_TOKEN
-
-### Configurando Template de Terraform
-1. en el archivo Terraform-plan.yml y terraform-apply.yml cambiamos los `env` a: 
-    TF_CLOUD_ORGANIZATION: "Desafio-8-EducacionIT-RCS" *Nombre del Worskpace creado*
-    TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}" *Nombre del secret creado*
-    TF_WORKSPACE: "BootCamp-DevOps"
-    CONFIG_DIRECTORY: "./Desafio_8/learn-terraform-github-actions"
-
-### Crear Pull Request
-1. Creamos una branch: git checkout -b 'update-tfc-org'
 
     
 
