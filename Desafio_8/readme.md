@@ -3,7 +3,7 @@
 
 ## Español
 
-**Fecha:** XXX-Septiembre-2024  
+**Fecha:** 26-Septiembre-2024  
 **Autor:** Rodrigo Carbonatto Sarlengo  
 **Título:** Desafío 8 - Bootcamp DevOps
 
