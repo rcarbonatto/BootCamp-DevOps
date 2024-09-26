@@ -1,5 +1,5 @@
 #  Terraform & Github Action- Desafío 5
-*A Impmlementar: https://developer.hashicorp.com/terraform/tutorials/automation/github-actions*
+*A Implementar: https://developer.hashicorp.com/terraform/tutorials/automation/github-actions*
 
 ## Español
 
