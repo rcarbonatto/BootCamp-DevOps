@@ -47,6 +47,14 @@
 
 ### Crear Pull Request
 1. Creamos una branch: git checkout -b 'update-tfc-org'
+2. Realizamos un cambio y agregamos el cambio: git add .
+3. Hacemos commmit git commit -m "mensaje"
+4. Hacemos Push de los cambios: git push origin update-tfc-org
+5. Hacemos la solicitud de Pull Request: gh pr create y seguimos los pasos
+
+### Aprobar Pull Request
+1. Desde la web de Github vamos a Pull Request
+
 
     
 
