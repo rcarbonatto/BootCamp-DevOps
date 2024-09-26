@@ -27,6 +27,9 @@
         1. AWS_ACCESS_KEY_ID: Colocamos la AccessKey y seleccionamos Sensitive
         2. AWS_SECRET_ACCESS_KEY: Colocamos la SecretKey y seleccionamos Sensitive
         3. AWS_SESSION_TOKEN: En caso de usar usuario temporal (AWS Academy por ejemplo), ponemos el Session Token
+
+
+
 ### 4. VER SI SE CAMBIA
 Creamos el token que usaremos para Github Action
     1. Vamos a Account Settings - Tokens
