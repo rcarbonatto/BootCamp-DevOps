@@ -57,8 +57,11 @@
 2. Nos aparecera un cartel el cual nos llevara a la pagina de Terraform para aprobar la implementacion
 
 ### Prueba de Funcionamiento
-1. Pull Request en GitHub ![Pull Request GitHub](./ScreenCapture/PullRequest_GitHub.png)
-2. 
+1. Pull Request en GitHub ![Pull Request GitHub](./ScreenCapture/1.PullRequest_GitHub.png)
+2. Veremos en la parte inferior el Plan que finalizo y muestra que se va a crear, cambiar, etc ![Terraform Plan](./ScreenCapture/2.Terraform%20Plan.png)
+3. Aprobamos el Pull Request en Github y una vez realizado vamos al Workspace en Terraform y podemos aplicar los cambios ![Apply Finish](./ScreenCapture/3.%20Apply%20Finish.png)
+4. Prueba de Output en terraform, instancia creada en AWS y acceso al webserver ![Ingresando al Sitio](./ScreenCapture/4.%20Ingresando%20al%20Sitio.png)
+5. Finalmente Destruimos todos los recursos creados para este Desafio.
 
 
     
