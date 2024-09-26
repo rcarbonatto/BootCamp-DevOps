@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    enviroment {
+    environment {
         NODE1_PRIVATE_KEY=credentials('Key_Node1')
     }
     
