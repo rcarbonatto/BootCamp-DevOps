@@ -58,7 +58,7 @@
 
 ### Prueba de Funcionamiento
 1. Pull Request en GitHub ![Pull Request GitHub](./ScreenCapture/PullRequest_GitHub.png)
-2. Terraform 
+2. 
 
 
     
