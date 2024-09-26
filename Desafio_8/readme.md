@@ -57,7 +57,8 @@
 2. Nos aparecera un cartel el cual nos llevara a la pagina de Terraform para aprobar la implementacion
 
 ### Prueba de Funcionamiento
-1. 
+1. Pull Request en GitHub ![Pull Request GitHub](./ScreenCapture/PullRequest_GitHub.png)
+2. Terraform 
 
 
     
