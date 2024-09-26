@@ -54,7 +54,10 @@
 
 ### Aprobar Pull Request
 1. Desde la web de Github vamos a Pull Request
-2. 
+2. Nos aparecera un cartel el cual nos llevara a la pagina de Terraform para aprobar la implementacion
+
+### Prueba de Funcionamiento
+1. 
 
 
     
