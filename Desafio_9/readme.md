@@ -34,5 +34,6 @@
 
 ### Ejecucion
 1. Para Ejecutar el Action lo hemos seteado para Push. por lo cual debemos realizar algun push dentro de la carpeta Desafio 9
-
+2. Prueba de Github Action: ![GitHub_Action_Run](./ScreenCapture/1.%20GitHub_Action_Run.png)
+3. Prueba Docker Hub Push from GitHub: ![Docker Hub Creation](./ScreenCapture/2.%20Docker%20Hub%20Creation.png)
 
