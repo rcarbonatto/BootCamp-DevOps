@@ -4,8 +4,8 @@ FROM node:22.8.0-alpine AS base
 WORKDIR /usr/src/app
 
 # Copiamos los archivos package-lock.json y package.json
-COPY ./nodejs-helloworld-api/package*.json ./
-COPY ./nodejs-helloworld-api/* ./
+COPY ./Desafio_9/nodejs-helloworld-api/package*.json ./
+COPY ./Desafio_9/nodejs-helloworld-api/* ./
 
 # Instala dependencias 
 RUN npm install
