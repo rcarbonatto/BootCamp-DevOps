@@ -26,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ../Desafio_9/Dockerfile
+        file: Desafio_9/Dockerfile
         push: true
         tags: rcarbonatto/desafio9_educacionit:latest  # Replace with your Docker Hub username/repository
 
