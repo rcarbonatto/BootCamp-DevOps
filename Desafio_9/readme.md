@@ -31,6 +31,8 @@
 2. Dentro de la carpeta debemos crear un archivo .yml [Para este Desafio](../.github\workflows\desafio9_deploy.yml)
 3. Vamos a la pagina de Github para crear el secreto que usaremos para autenticarnos a nuestro repositorio privado de Docker
     1. Dentro de Settings - Secrets and Variable
-4. 
+
+### Ejecucion
+1. Para Ejecutar el Action lo hemos seteado para Push. por lo cual debemos realizar algun push dentro de la carpeta Desafio 9
 
 
