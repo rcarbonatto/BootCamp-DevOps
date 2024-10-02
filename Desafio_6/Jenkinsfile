@@ -4,10 +4,6 @@ pipeline {
     stages {
         stage("Ejecutar ansible playbook") {
             steps {
-                sh "whoami"
-                sh "pwd"
-                sh "ls ./Desafio_6/"
-                sh "ls ./Desafio_6/ansible_Desafio6"
                 sh "ansible-playbook -i ./Desafio_6/ansible_Desafio6/inventory.ini ./Desafio_6/ansible_Desafio6/main.yml"
 
             }
