@@ -6,8 +6,9 @@ pipeline {
             steps {
                 sh "whoami"
                 sh "pwd"
-                sh "ls"
-                sh "ansible-playbook -i ./ansible_Desafio6/inventory.ini ./ansible_Desafio6/main.yml"
+                sh "ls ./Desafio_6/"
+                sh "ls ./Desafio_6/ansible_Desafio6"
+                sh "ansible-playbook -i ./Desafio_6/ansible_Desafio6/inventory.ini ./Desafio_6/ansible_Desafio6/main.yml"
 
             }
         }
