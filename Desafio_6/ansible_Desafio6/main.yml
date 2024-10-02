@@ -1,6 +1,6 @@
 # definir el alcance de los hosts
 - name: Deployment de un sitio estatico
-  hosts: all
+  hosts: nodo1
   become: yes
   pre_tasks:
     - name: Verificar si el OS es Ubuntu
