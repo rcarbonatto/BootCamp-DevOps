@@ -16,7 +16,7 @@
 3. Creamos el archivo Dockerfile, al tener que correr una aplicacion node.js buscamos el repositorio node dentro de DockerHub y lo agregamos
 4.  Configuracion de Dockerfile para este proyecto: [Dockerfile](./Dockerfile)
 5. Realizamos el Build local para ver que funciona:
-    1. `docker build -t NombreProyecto:tag (ej: rcarbonatto/desafio9_educacionit:v0.1)` 
+    1. `docker build -t NombreProyecto:tag . (ej: rcarbonatto/desafio9_educacionit:v0.1)` 
     2. `docker run -p 3000:3000 rcarbonatto/desafio9_educacionit:v0.1`
     3. Nos conectamos al localhost:3000 para ver que este levantado.
 6. Hacemos el Push a DockerHub: `docker push rcarbonatto/desafio9_educacionit:v0.1`
