@@ -14,4 +14,4 @@
 
 ### Ejecucion
 1. docker commpose up ![Output](./ScreenCapture/1.%20docker%20compose%20up.png)
-2. Containers corriendo [docker ps](./ScreenCapture/2.%20docker%20ps.png)
+2. Containers corriendo ![docker ps](./ScreenCapture/2.%20docker%20ps.png)
