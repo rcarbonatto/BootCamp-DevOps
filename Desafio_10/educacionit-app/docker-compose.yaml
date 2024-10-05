@@ -1,0 +1,42 @@
+# Declaramos los servicios que vamos a utilizar
+services:
+# Servidor Base de Datos
+  db-server:
+    container_name: desafio10_app_db
+    image: mongo:7.0
+# Puerto Interno del container:Puerto que se Expone
+    ports:
+      - "27017:27017"
+# Usuario y pass de la base Mongos. Idealmente esto deberia ser un secreto.
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=s3cr3t!
+# Indicamos un volumen para que los datos persistan
+    volumes:
+      - mongodb_data:/data/db
+
+# Aplicacion
+  app:
+    container_name: desafio10_app
+    build:
+# Indicamos donde esta el Dockerfile que realizara el Build. En este caso Raiz
+      context: .
+      dockerfile: Dockerfile
+# Puerto Interno del container:Puerto que se Expone
+    ports:
+      - "3000:3000"
+# Indicamos que depende de otro servicio. Aseguramos que esta corriendo la db
+    depends_on:
+      - db-server
+# Declaramos las variables de entorno
+    environment:
+      - PORT=3000
+# Donde esta la base de datos | indicamos el servicio anterior
+      - MONGO_DB_URI=mongodb://db-server:27017
+      - MONGO_DB_NAME=db-desafio10-app
+# Indicamos User y Pass
+      - MONGO_DB_USER=root
+      - MONGO_DB_PASS=s3cr3t!
+
+volumes:
+  mongodb_data: {}
