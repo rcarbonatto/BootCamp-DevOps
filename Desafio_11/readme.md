@@ -16,5 +16,3 @@
 ### Ajustando los archivos de manifiesto
 1. Debemos crear una iamgen
 
-### Ejecucion
-1. 
