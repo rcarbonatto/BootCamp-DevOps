@@ -2,7 +2,7 @@
 services:
 # Servidor Base de Datos
   db-server:
-    container_name: desafio10_app_db
+    container_name: desafio11_app_db
     image: mongo:7.0
 # Puerto Interno del container:Puerto que se Expone
     ports:
@@ -17,7 +17,7 @@ services:
 
 # Aplicacion
   app:
-    container_name: desafio10_app
+    container_name: desafio11_app
     build:
 # Indicamos donde esta el Dockerfile que realizara el Build. En este caso Raiz
       context: .

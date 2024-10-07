@@ -21,22 +21,22 @@ spec:
         kompose.version: 1.34.0 (cbf2835db)
       labels:
         io.kompose.service: db-server
-      spec:
-        containers:
-          - env:
-              - name: MONGO_INITDB_ROOT_PASSWORD
-                value: s3cr3t!
-              - name: MONGO_INITDB_ROOT_USERNAME
-                value: root
-            image: mongo:7.0
-            name: desafio10-app-db
-            ports:
-              - containerPort: 27017
-                protocol: TCP
-            volumeMounts:
-              - mountPath: /data/db
-                name: mongodb-data
-        restartPolicy: Always
+    spec:
+      containers:
+        - env:
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: s3cr3t!
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: root
+          image: mongo:7.0
+          name: desafio11-app-db
+          ports:
+            - containerPort: 27017
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /data/db
+              name: mongodb-data
+      restartPolicy: Always
       volumes:
         - name: mongodb-data
           persistentVolumeClaim:
