@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "charthellmmify.fullname" . }}-db-server
+  labels:
+    io.kompose.service: db-server
+  {{- include "charthellmmify.labels" . | nindent 4 }}
+  annotations:
+    kompose.cmd: C:\ProgramData\chocolatey\lib\kubernetes-kompose\tools\kompose.exe
+      convert -f ..\docker-compose.yaml
+    kompose.version: 1.34.0 (cbf2835db)
+spec:
+  replicas: {{ .Values.dbServer.replicas }}
+  selector:
+    matchLabels:
+      io.kompose.service: db-server
+    {{- include "charthellmmify.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: db-server
+      {{- include "charthellmmify.selectorLabels" . | nindent 8 }}
+      annotations:
+        kompose.cmd: C:\ProgramData\chocolatey\lib\kubernetes-kompose\tools\kompose.exe
+          convert -f ..\docker-compose.yaml
+        kompose.version: 1.34.0 (cbf2835db)
+    spec:
+      containers:
+      - env:
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          value: {{ quote .Values.dbServer.desafio11AppDb.env.mongoInitdbRootPassword }}
+        - name: MONGO_INITDB_ROOT_USERNAME
+          value: {{ quote .Values.dbServer.desafio11AppDb.env.mongoInitdbRootUsername }}
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.dbServer.desafio11AppDb.image.repository }}:{{ .Values.dbServer.desafio11AppDb.image.tag
+          | default .Chart.AppVersion }}
+        name: desafio11-app-db
+        ports:
+        - containerPort: 27017
+          protocol: TCP
+        resources: {}
+        volumeMounts:
+        - mountPath: /data/db
+          name: mongodb-data
+      restartPolicy: Always
+      volumes:
+      - name: mongodb-data
+        persistentVolumeClaim:
+          claimName: {{ include "charthellmmify.fullname" . }}-mongodb-data

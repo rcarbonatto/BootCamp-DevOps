@@ -1,0 +1,35 @@
+app:
+  desafio11App:
+    env:
+      mongoDbName: db-desafio10-app
+      mongoDbPass: s3cr3t!
+      mongoDbUri: mongodb://d12-charthellmmify-db-server:27017
+      mongoDbUser: root
+      port: "3000"
+    image:
+      repository: rcarbonatto/desafio_11
+      tag: v1
+  ports:
+  - name: "3000"
+    port: 3000
+    targetPort: 3000
+  replicas: 1
+  type: ClusterIP
+dbServer:
+  desafio11AppDb:
+    env:
+      mongoInitdbRootPassword: s3cr3t!
+      mongoInitdbRootUsername: root
+    image:
+      repository: mongo
+      tag: "7.0"
+  ports:
+  - name: "27017"
+    port: 27017
+    targetPort: 27017
+  replicas: 1
+  type: ClusterIP
+kubernetesClusterDomain: cluster.local
+pvc:
+  mongodbData:
+    storageRequest: 100Mi
