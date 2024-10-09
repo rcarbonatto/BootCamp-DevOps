@@ -1,7 +1,6 @@
 # Ansible Modularizacion - Desafío 6
 
 ## Español
-
 **Fecha:** 09-Octubre-2024  
 **Autor:** Rodrigo Carbonatto Sarlengo  
 **Título:** Desafío 6 - Bootcamp DevOps
