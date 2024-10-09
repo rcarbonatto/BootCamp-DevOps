@@ -1,8 +1,8 @@
-# Ansible Modularizacion - Desafío 5
+# Ansible Modularizacion - Desafío 6
 
 ## Español
 
-**Fecha:** XXX-Septiembre-2024  
+**Fecha:** 09-Octubre-2024  
 **Autor:** Rodrigo Carbonatto Sarlengo  
 **Título:** Desafío 6 - Bootcamp DevOps
 
@@ -22,9 +22,6 @@
     4. Configuramos el archivo ![inventory.ini](./ansible_Desafio6/inventory.ini)
 3. Configuramos la key en el controller siguiendo los pasos del 1 al 3 del punto anterior
 
-### Jenkins
-1. Agregamos el repositorio como una nueva tarea a Jenkins ![Como Crear el Repo? Mira este Readme ](../Desafio_1/readme.md)
-2. Contruimos la tarea en Jenkins
-
-
 ### Pruebas funcionamiento
+1. Corremos el Playbook `ansible-playbook -i inventory.ini main.yml`
+2. ![Palybook Running](./Screen_Captures/1.%20Playbook%20Runngin.png)
