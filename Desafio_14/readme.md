@@ -1,10 +1,10 @@
-#  ArgoCD - Desafío 13
+#  ArgoCD - Desafío 14
 
 ## Español
 
 **Fecha:** 08-Octubre-2024  
 **Autor:** Rodrigo Carbonatto Sarlengo  
-**Título:** Desafío 13 - Bootcamp DevOps
+**Título:** Desafío 14 - Bootcamp DevOps
 
 ### Pre-Requisito
 1. minikube

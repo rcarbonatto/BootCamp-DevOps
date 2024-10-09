@@ -2,7 +2,7 @@
 
 ## Español
 
-**Fecha:** X-Octubre-2024  
+**Fecha:** 6-Octubre-2024  
 **Autor:** Rodrigo Carbonatto Sarlengo  
 **Título:** Desafío 11 - Bootcamp DevOps
 
